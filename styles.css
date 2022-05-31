@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+.grid-container {
+  max-width: 800px;
+  margin: 2rem auto;
+
+  /* border: solid 2px red; */
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1rem 1rem;
+}
+
+.cell {
+  line-height: 75px;
+  background-color: rgb(207, 197, 199);
+  text-align: center;
+  font-size: 2em;
+  border: solid 1px black;
+  border-radius: 3%;
+}
+.el-2 {
+  grid-column: 3 / 6;
+  grid-row: 2 /3;
+}
+div:nth-child(odd) {
+  background-color: rgb(103, 51, 187);
+}
